@@ -1,0 +1,124 @@
+@font-face{
+    font-family: 'myFont' ;
+    src: url('fonts/VarelaRound-Regular.ttf') format('ttf');
+    src: url('fonts/Ubuntu-Light.ttf') format('ttf');
+    src: url('fonts/Montserrat-VariableFont_wght.ttf') format('ttf');
+}
+body{
+    background-color: antiquewhite;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 65px;
+    background-color: black;
+    color:white;
+}
+nav ul li{
+    padding: 0 12px;
+}
+
+.brand img{
+    width: 50px;
+    height: 50px;
+    font-family: 'myFont';
+    padding: 0 8px;
+   
+}
+
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+
+.container{
+    min-height: 70vh;
+    background-color: rgb(18, 18, 18);
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    display:flex;
+    width: 70%;
+    margin: 8px auto;
+    border-radius: 15px;
+    padding: 8px 18px;
+    
+}
+
+.bottom{
+    position: sticky;
+    height: 100px;
+    background-color: black;
+    color: white;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.icons{
+    margin-bottom: 10px;
+}
+.icons i{
+    cursor: pointer;
+    margin: 0 10px;
+}
+#myProgressBar{
+    width: 60vw;
+    cursor: pointer;
+}
+
+.songItem{
+    height: 50px;
+    display: flex;
+    background-color: white;
+    width: 80%;
+    color: black;
+    margin: 15px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 40px;
+}
+.songItemContainer{
+    margin-top: 20px;
+}
+.timeStamp{
+    padding:0 8px ;
+}
+.timestamp i{
+    cursor: pointer;
+}
+
+.songItem img{
+    margin: 0 5px;
+    height: 100%;
+    border-radius: 50%;
+}
+.icon{
+    padding: 8px 0;
+}
+.songInfo{
+    position: absolute;
+    left: 5vw;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.songInfo img{
+    margin: auto 10px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+    
+}
